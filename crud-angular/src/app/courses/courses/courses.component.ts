@@ -1,6 +1,7 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
+import { Observable } from 'rxjs';
 import { Course } from '../model/course';
 import { CoursesService } from '../services/courses.service';
 
@@ -11,7 +12,8 @@ import { CoursesService } from '../services/courses.service';
 })
 export class CoursesComponent implements OnInit {
 
-  courses: Course[] = [ ];
+  courses: Observable<Course[]>;
+  //courses: Course[] = [] *Usado com array de cursos e NgFor*
   displayedColumns: string[] = [ 'name', 'category'];
 
   dataSource = new MatTableDataSource<CoursesComponent>();
@@ -21,9 +23,11 @@ export class CoursesComponent implements OnInit {
 
 
   constructor(private coursesService: CoursesService) {
-    // TODO document why this constructor is empty
+
     //this.coursesService = new CoursesService();
     this.courses = this.coursesService.list();
+
+    //this.coursesService.list().subscribe(courses => this.courses = courses); *Usado com array de cursos e NgFor*
   }
 
   ngOnInit(): void {
