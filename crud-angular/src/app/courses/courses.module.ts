@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
-import {MatTableModule} from '@angular/material/table';
-import {MatPaginatorModule} from '@angular/material/paginator';
+import { AppMaterialModule } from '../shared/app-material/app-material.module';
+
 
 
 
@@ -15,8 +15,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
   imports: [
     CommonModule,
     CoursesRoutingModule,
-    MatTableModule,
-    MatPaginatorModule,
+    AppMaterialModule,
+
   ]
 })
 export class CoursesModule { }
