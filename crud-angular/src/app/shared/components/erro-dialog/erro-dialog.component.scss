@@ -1,0 +1,44 @@
+/* Estilo para o container do diálogo */
+.mat-dialog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para o título */
+.mat-dialog-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.titleCenter{
+  text-align: center;
+}
+
+/* Estilo para o conteúdo */
+.dialog-content {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para as ações */
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo para o botão */
+.mat-dialog-actions button {
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.mat-dialog-actions button:hover {
+  background-color: #0062cc;
+}
