@@ -6,6 +6,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 
@@ -18,6 +20,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatToolbarModule,
     MatProgressSpinnerModule,
     MatDialogModule,
+    MatIconModule,
+
 
   ]
 })

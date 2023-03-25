@@ -8,13 +8,13 @@ import { delay, first, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class CoursesService {
-private readonly API = '/assets/curssos.json'
+private readonly API = '/assets/cursos.json'
   constructor(private httpClient: HttpClient) { /* TODO document why this constructor is empty */  }
 
   list() {
     return this.httpClient.get<Course[]>(this.API).pipe(
       first(),
-      delay(5000),
+      delay(0),
       tap((courses: any) => console.log(courses))
     );
   }
