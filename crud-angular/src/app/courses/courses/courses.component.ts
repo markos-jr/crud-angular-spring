@@ -16,7 +16,7 @@ export class CoursesComponent implements OnInit {
 
   courses$: Observable<Course[]>;
   //courses: Course[] = [] *Usado com array de cursos e NgFor*
-  displayedColumns: string[] = [ 'name', 'category'];
+  displayedColumns: string[] = [ 'name', 'category', 'actions'];
 
   dataSource = new MatTableDataSource<CoursesComponent>();
   @ViewChild(MatPaginator) paginator!: MatPaginator;
