@@ -37,13 +37,9 @@ export class CoursesComponent implements OnInit {
     );
 
     //this.coursesService.list().subscribe(courses => this.courses = courses); *Usado com array de cursos e NgFor*
-  }
-
-  ngOnInit(): void {
-    // TODO document why this method 'ngOnInit' is empty
-
 
   }
+
   onError(errorMsg: string) {
     this.dialog.open(ErroDialogComponent, {
       data: errorMsg,
@@ -52,5 +48,15 @@ export class CoursesComponent implements OnInit {
     });
 
 }
+  ngOnInit(): void {
+    // TODO document why this method 'ngOnInit' is empty
+
+
+  }
+
+  onAdd(){
+    alert('Clicou')
+  }
+
 
 }
